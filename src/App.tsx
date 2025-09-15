@@ -5,14 +5,14 @@ import styles from "./App.module.css";
 const App: Component = () => {
   return (
     <div class={styles.App}>
-      <header>
-        <h1 class="title">
-          <span class="first-name">James</span>
-          <span class="last-name">
-            Golob<span class="blinking-cursor">_</span>
+      <header class={styles.header}>
+        <h1 class={styles.title}>
+          <span class={styles.firstName}>James</span>
+          <span class={styles.lastName}>
+            Golob<span class={styles.blinkingCursor}>_</span>
           </span>
         </h1>
-        <nav>
+        <nav class={styles.nav}>
           <ul>
             <li>
               <a href="main.html">Home</a>
@@ -25,19 +25,21 @@ const App: Component = () => {
             </li>
           </ul>
         </nav>
-        <a
-          href="https://github.com/CactiNotch"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            class="github-logo"
-            src="https://github.com/fluidicon.png"
-            alt="GitHub Logo"
-            width="32"
-            height="32"
-          />
-        </a>
+        <div class={styles.links}>
+          <a
+            href="https://github.com/CactiNotch"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class={styles.githubLogo}
+              src="https://github.com/fluidicon.png"
+              alt="GitHub Logo"
+              width="32"
+              height="32"
+            />
+          </a>
+        </div>
       </header>
       <main>
         <section>
@@ -45,8 +47,8 @@ const App: Component = () => {
           <p>This is the main content area of the page.</p>
         </section>
       </main>
-  <div id="footer-placeholder"></div>
-  <footer>
+      <div id="footer-placeholder"></div>
+      <footer>
         <div class="container">
           <p>
             &copy; <span id="year"></span> James Golob — Built with HTML, CSS,
