@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+header {
+  display: flex;
+  box-shadow: inset 0 -1px 0 #ccc;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #f0eee6;
+  z-index: 100;
+  margin: 0;
+  padding: 20px 40px;
+}
+
+nav {
+  margin-left: 40px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.github-logo {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.title {
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+  margin: 0;
+}
+
+.first-name,
+.last-name {
+  display: block;
+}
+
+.blinking-cursor {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
