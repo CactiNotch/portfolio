@@ -1,0 +1,12 @@
+.footer {
+  box-sizing: border-box;
+  width: 100%;
+  background: #3d2c2e;
+  color: #e6eef8;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 20;
+}
