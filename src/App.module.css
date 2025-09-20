@@ -2,7 +2,6 @@
   min-height: 100%;
 }
 
-/* Layout utilities for sticky-but-not-fixed footer */
 .pageWithStickyFooter {
   min-height: 100vh;
   display: flex;

@@ -1,13 +1,15 @@
 import type { Component } from "solid-js";
-import styles from "./article.module.css";
 
-const Article: Component = () => {
+import styles from "./Article.module.css";
+import pagesStyles from "./Pages.module.css";
+
+const Articles: Component = () => {
   return (
-    <main class={styles.page}>
-      <article class={styles.article}>
-        <header class={styles.header}>
-          <h1 class={styles.title}>A Starter Article Template</h1>
-          <p class={styles.meta}>
+    <main class={pagesStyles.page}>
+      <div class={pagesStyles.pageContent}>
+        <header class={pagesStyles.header}>
+          <h1 class={pagesStyles.title}>A Starter Article Template</h1>
+          <p class={pagesStyles.meta}>
             Published <time datetime="2025-09-16">September 16, 2025</time>
           </p>
         </header>
@@ -45,9 +47,9 @@ const Article: Component = () => {
             articles or resources for readers who want to dive deeper.
           </p>
         </section>
-      </article>
+      </div>
     </main>
   );
 };
 
-export default Article;
+export default Articles;

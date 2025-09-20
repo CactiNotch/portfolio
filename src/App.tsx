@@ -1,18 +1,14 @@
-import type { Component } from "solid-js";
+import type { Component, JSX } from "solid-js";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
 import styles from "./App.module.css";
-import Article from "./components/article";
 
-const App: Component = () => {
+const App: Component<{ children?: JSX.Element }> = (props) => {
   return (
     <div class={`${styles.App} ${styles.pageWithStickyFooter}`}>
       <Header />
-      <main class={styles.pageContent}>
-        <Article />
-      </main>
-
+      <main class={styles.pageContent}>{props.children}</main>
       <Footer />
     </div>
   );

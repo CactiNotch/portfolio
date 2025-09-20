@@ -1,6 +1,7 @@
 import type { Component } from "solid-js";
 
 import styles from "./header.module.css";
+import { A } from "@solidjs/router";
 
 const Header: Component = () => {
   return (
@@ -14,13 +15,13 @@ const Header: Component = () => {
       <nav class={styles.nav}>
         <ul>
           <li>
-            <a href="main.html">Home</a>
+            <A href="/">Home</A>
           </li>
           <li>
-            <a href="articles.html">Articles</a>
+            <A href="/articles">Articles</A>
           </li>
           <li>
-            <a href="projects.html">Projects</a>
+            <A href="/projects">Projects</A>
           </li>
         </ul>
       </nav>
